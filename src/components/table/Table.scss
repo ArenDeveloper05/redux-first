@@ -1,0 +1,30 @@
+.sort-up-icon {
+  font-size: 20px;
+  color: rgb(191, 0, 255);
+  box-shadow: inset 1px 1px 0px 1px;
+  margin-right: 10px;
+  transition: 0.3s;
+  &:hover {
+    color: black;
+  }
+}
+.sort-down-icon {
+  font-size: 20px;
+  color: rgb(255, 64, 0);
+  box-shadow: 1px 1px 0px 1px;
+  margin-left: 10px;
+  transition: 0.3s;
+  &:hover {
+    color: black;
+  }
+}
+tr:nth-child(2n) {
+  background-color: #a720fc36;
+}
+// tr:nth-child(2n + 1) {
+//   background-color: #607d8b63;
+// }
+table {
+  text-align: center;
+  border: 2px solid black;
+}
