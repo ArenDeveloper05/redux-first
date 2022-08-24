@@ -1,16 +1,19 @@
 import "./App.css";
 import { Provider } from "react-redux";
-import store from "./redux/store/store";
+import { store, persistor } from "./redux/store/store";
 import Table from "./components/table/Table";
+import { PersistGate } from "redux-persist/integration/react";
 
 const App = () => {
   return (
     <Provider store={store}>
-      <div className="App">
-        <main>
-          <Table />
-        </main>
-      </div>
+      <PersistGate persistor={persistor}>
+        <div className="App">
+          <main>
+            <Table />
+          </main>
+        </div>
+      </PersistGate>
     </Provider>
   );
 };
